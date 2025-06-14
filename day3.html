@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+Day 3 Assignment: Structured Web Page with HTML Tables, Forms, Iframes, and Classes.
+This project demonstrates the use of tables for data, forms for input, iframes for embedding videos, and CSS classes for styling.
+-->
+
+<html>
+<head>
+    <title>Day 3 Assignment</title>
+    <style>
+        .heading {
+            color: darkblue;
+            text-align: center;
+        }
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .info-table td, .info-table th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .form-section {
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="heading">Welcome to My Structured Web Page</h1>
+
+    <h2>Student Information Table</h2>
+    <table class="info-table">
+        <tr>
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>Branch</th>
+        </tr>
+        <tr>
+            <td>Shaikh Ali</td>
+            <td>101</td>
+            <td>Computer</td>
+        </tr>
+        <tr>
+            <td>Laiba </td>
+            <td>102</td>
+            <td>Civil</td>
+        </tr>
+    </table>
+
+    <div class="form-section">
+        <h2>Contact Form</h2>
+        <form action="#">
+            Name: <input type="text" name="name"><br><br>
+            Email: <input type="email" name="email"><br><br>
+            Message:<br>
+            <textarea name="message" rows="5" cols="40"></textarea><br><br>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+
+    <h2>Watch a Sample Video</h2>
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/tgbNymZ7vqY" 
+        frameborder="0" allowfullscreen>
+    </iframe>
+
+</body>
+</html>
